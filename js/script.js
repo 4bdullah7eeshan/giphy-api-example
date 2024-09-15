@@ -1,4 +1,9 @@
+const newGif = document.querySelector("#new");
 const img = document.querySelector("img");
+
+newGif.addEventListener('click', () => {
+    window.location.reload();
+});
 
 fetch(
   "https://api.giphy.com/v1/gifs/translate?api_key=ISqXk4wJHYuq1KZFDkvtcPOIUJfwzRmA&s=cats",
